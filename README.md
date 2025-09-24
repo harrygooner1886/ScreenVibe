@@ -1,4 +1,4 @@
-# 🎬 Movie App
+# 🎬 ScreenVibe
 
 A React app that helps you quickly find something to watch when you sit down for dinner 🍿.  
 
