@@ -5,11 +5,13 @@ function NavBar() {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <Link to="/">Movie App</Link>
+        <img src="/ScreenVibe_Logo.png" alt="ScreenVibe Logo" className="logo" />
+        <Link to="/">
+          <span className="logo-text">ScreenVibe</span>
+        </Link>
       </div>
       <div className="navbar-links">
         <Link to="/" className="nav-link">Home</Link>
-        {/* 👇 Update this line */}
         <Link to="/watchlist" className="nav-link">My Watchlist</Link>
       </div>
     </nav>
