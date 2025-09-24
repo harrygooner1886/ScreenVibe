@@ -1,42 +1,45 @@
-import { createContext, useState, useContext, useEffect } from "react"
+import { createContext, useState, useContext, useEffect } from "react";
 
-const MovieContext = createContext()
+const MovieContext = createContext();
 
-export const useMovieContext = () => useContext(MovieContext)
+export const useMovieContext = () => useContext(MovieContext);
 
 export const MovieProvider = ({ children }) => {
-  const [favorites, setFavorites] = useState([])
+  const [watchlist, setWatchlist] = useState([]);
 
+  // Load saved watchlist from localStorage
   useEffect(() => {
-    const storedFavs = localStorage.getItem("favorites")
+    const stored = localStorage.getItem("watchlist");
+    if (stored) setWatchlist(JSON.parse(stored));
+  }, []);
 
-    if (storedFavs) setFavorites(JSON.parse(storedFavs))
-  }, [])
-
+  // Save to localStorage whenever it changes
   useEffect(() => {
-    localStorage.setItem('favorites', JSON.stringify(favorites))
-  }, [favorites])
+    localStorage.setItem("watchlist", JSON.stringify(watchlist));
+  }, [watchlist]);
 
-  const addToFavorites = (movie) => {
-    setFavorites(prev => [...prev, movie])
-  }
+  const addToWatchlist = (movie) => {
+    setWatchlist((prev) => [...prev, movie]);
+  };
 
-  const removeFromFavorites = (movieId) => {
-    setFavorites(prev => prev.filter(movie => movie.id !== movieId))
-  }
+  const removeFromWatchlist = (movieId) => {
+    setWatchlist((prev) => prev.filter((movie) => movie.id !== movieId));
+  };
 
-  const isFavorite = (movieId) => {
-    return favorites.some(movie => movie.id === movieId)
-  }
+  const isInWatchlist = (movieId) => {
+    return watchlist.some((movie) => movie.id === movieId);
+  };
 
   const value = {
-    favorites,
-    addToFavorites,
-    removeFromFavorites,
-    isFavorite
-  }
+    watchlist,
+    addToWatchlist,
+    removeFromWatchlist,
+    isInWatchlist,
+  };
 
-  return <MovieContext.Provider value ={value}>
-    {children}
-  </MovieContext.Provider>
-}
+  return (
+    <MovieContext.Provider value={value}>
+      {children}
+    </MovieContext.Provider>
+  );
+};

@@ -1,5 +1,5 @@
 import './css/App.css';
-import Favorites from './pages/Favorites';
+import Watchlist from "./pages/Watchlist";
 import Home from "./pages/Home"
 import { Routes, Route } from "react-router-dom"
 import { MovieProvider } from "./contexts/MovieContext";
@@ -12,7 +12,7 @@ function App() {
       <main className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/favorites" element={<Favorites />} />
+          <Route path="/watchlist" element={<Watchlist />} />
         </Routes>
       </main>
     </MovieProvider>
