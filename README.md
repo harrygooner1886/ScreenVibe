@@ -18,5 +18,3 @@ npm install
 
 ## Start the dev server:
 npm run dev
-
-Made with ❤️ while learning React
