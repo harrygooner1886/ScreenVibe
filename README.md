@@ -12,12 +12,6 @@ Built as part of my coding journey, this app lets you:
 - React + Vite
 - JavaScript (ES6+)
 - CSS
-
-## 🛠️ Setup
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/harrygooner1886/movie-app.git
-   cd movie-app
    
 ## Install dependencies:
 npm install
