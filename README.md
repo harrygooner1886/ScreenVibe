@@ -1,24 +1,57 @@
-# 🎬 ScreenVibe
+🎬 ScreenVibe
 
-A React app that helps you quickly find something to watch when you sit down for dinner 🍿.  
+Discover what to watch, save it for later, and vibe with your screen time.
 
-## ✨ Features
-- 🔍 Search for movies by title
-- 📌 Save movies to a personal watchlist
-- 🎭 Get recommendations based on mood [planned feature]
-- 📺 Show which streaming platforms (Netflix, Amazon, etc.) a movie is on [planned feature]
+ScreenVibe is a React app that helps you decide what to watch when you sit down for a movie night.
+You can search movies, build a personal watchlist, and mark them as watched — all with a sleek, Netflix-style interface.
 
-## 🚀 Tech Stack
-- React + Vite
-- JavaScript (ES6+)
-- CSS
+✨ Features
 
-## 📸 Screenshots
-Coming soon
+🔍 Search movies using The Movie Database (TMDb) API.
 
-## 🌍 Live Demo
-[👉 Try the app here](#) *(link coming soon — Netlify/Vercel deployment planned)*
+🍿 Personal Watchlist — add, remove, and manage your movies.
 
----
+✔️ Mark as Watched (coming soon).
 
-🔨 Built as part of my coding journey — showing what I’ve learned and where I’m going next 🚀
+🎨 Stylish UI with gradient branding, animated nav links, and custom favicon.
+
+💾 LocalStorage persistence — your watchlist is saved between sessions.
+
+⚡ Built with React + Vite for blazing fast dev and build.
+
+🖼️ Screenshots
+Coming soon...
+
+	
+	
+🚀 Getting Started
+1. Clone the repo
+git clone https://github.com/harrygooner1886/movie-app.git
+cd movie-app
+
+2. Install dependencies
+npm install
+
+3. Start the dev server
+npm run dev
+
+
+Open http://localhost:5173
+ in your browser.
+
+🛠️ Tech Stack
+
+React
+ – UI framework
+
+Vite
+ – build tool
+
+TMDb API
+ – movie data
+
+React Router
+ – routing
+
+Font Awesome
+ – icons
