@@ -1,7 +1,25 @@
 .home {
-  padding: 2rem 0;
+  padding-top: 200px;
+  padding-bottom: 2rem;
   width: 100%;
   box-sizing: border-box;
+}
+
+.mood-fixed {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  right: 0;
+  z-index: 900;
+}
+
+.mood-fixed .mood-selector {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.mood-spacer {
+  height: 120px;
 }
 
 .search-form {
@@ -45,10 +63,12 @@
 
 @media (max-width: 639px) {
   .home {
-    padding: 1rem 0;
+    padding-top: 120px;
+    padding-bottom: 1rem;
   }
 
   .search-form {
+    margin-top: 1rem;
     margin-bottom: 1rem;
   }
 }

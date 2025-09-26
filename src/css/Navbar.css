@@ -1,5 +1,11 @@
 .navbar {
-  background-color: #000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  z-index: 1000;
+  background-color: #000;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -23,14 +29,13 @@
   background: linear-gradient(90deg, #e50914, #ff9900, #f5c518);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 0 12px rgba(229, 9, 20, 0.9);
   letter-spacing: 1px;
-  transition: transform 0.3s ease, text-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .logo-text:hover {
   transform: scale(1.05);
-  text-shadow: 0 0 12px rgba(229, 9, 20, 0.9);
 }
 
 .navbar-links {
