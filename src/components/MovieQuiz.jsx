@@ -1,9 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../css/MovieQuiz.css";
+import moodToGenres from "../utils/moodMapping";
 
-function MovieQuiz({ onComplete }) {
+function MovieQuiz({ onConfirm, initialAnswers }) {
   const [step, setStep] = useState(0);
-  const [answers, setAnswers] = useState({});
+  const [answers, setAnswers] = useState(initialAnswers || {});
+
+  useEffect(() => {
+    if (initialAnswers) {
+      setAnswers(initialAnswers);
+    }
+  }, [initialAnswers]);
 
   const questions = [
     {
@@ -32,7 +39,7 @@ function MovieQuiz({ onComplete }) {
     {
       id: "length",
       question: "What kind of runtime suits you?",
-      options: ["Short (<90min)", "Standard (90-120min)", "Epic (>120min)"],
+      options: ["Short (<90min)", "Standard (90–120min)", "Epic (>120min)"],
     },
     {
       id: "language",
@@ -53,13 +60,51 @@ function MovieQuiz({ onComplete }) {
     },
   ];
 
+  if (step === questions.length) {
+    return (
+      <div className="quiz-summary">
+        <h3>Here's what you picked:</h3>
+        <ul>
+          {Object.entries(answers).map(([key, value]) => (
+            <li key={key}>
+              <strong>{key}:</strong> {value}
+            </li>
+          ))}
+        </ul>
+
+        <button
+          className="quiz-btn confirm"
+          onClick={() => {
+            const mappedAnswers = {
+              ...answers,
+              genres: moodToGenres[answers.mood] || [],
+            };
+            onConfirm?.(mappedAnswers);
+          }}
+        >
+          Confirm & Show Movies
+        </button>
+
+        <button
+          className="quiz-btn restart subtle"
+          onClick={() => {
+            setStep(0);
+            setAnswers({});
+          }}
+        >
+          Retake Quiz
+        </button>
+      </div>
+    );
+  }
+
   const handleSelect = (option) => {
     const current = questions[step];
     const updatedAnswers = { ...answers, [current.id]: option };
     setAnswers(updatedAnswers);
 
     if (step === questions.length - 1) {
-      onComplete?.(updatedAnswers);
+      setStep(step + 1);
     } else {
       setStep(step + 1);
     }
@@ -84,24 +129,24 @@ function MovieQuiz({ onComplete }) {
 
       <div className="quiz-controls">
         {step > 0 && (
-          <>
-            <button
-              className="quiz-btn back"
-              onClick={() => setStep(step - 1)}
-            >
-              Back
-            </button>
+          <button
+            className="quiz-btn back"
+            onClick={() => setStep(step - 1)}
+          >
+            Back
+          </button>
+        )}
 
-            <button
-              className="quiz-btn restart subtle"
-              onClick={() => {
-                setStep(0);
-                setAnswers({});
-              }}
-            >
-              Restart Quiz
-            </button>
-          </>
+        {step > 0 && (
+          <button
+            className="quiz-btn restart subtle"
+            onClick={() => {
+              setStep(0);
+              setAnswers({});
+            }}
+          >
+            Retake Quiz
+          </button>
         )}
       </div>
     </div>

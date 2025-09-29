@@ -5,13 +5,11 @@ const MovieContext = createContext();
 export const useMovieContext = () => useContext(MovieContext);
 
 export const MovieProvider = ({ children }) => {
-  const [watchlist, setWatchlist] = useState([]);
-
-  // Load saved watchlist from localStorage
-  useEffect(() => {
+  // Initialize from localStorage right away
+  const [watchlist, setWatchlist] = useState(() => {
     const stored = localStorage.getItem("watchlist");
-    if (stored) setWatchlist(JSON.parse(stored));
-  }, []);
+    return stored ? JSON.parse(stored) : [];
+  });
 
   // Save to localStorage whenever it changes
   useEffect(() => {
@@ -19,7 +17,10 @@ export const MovieProvider = ({ children }) => {
   }, [watchlist]);
 
   const addToWatchlist = (movie) => {
-    setWatchlist((prev) => [...prev, movie]);
+    setWatchlist((prev) => {
+      if (prev.some((m) => m.id === movie.id)) return prev;
+      return [...prev, movie];
+    });
   };
 
   const removeFromWatchlist = (movieId) => {
@@ -30,11 +31,16 @@ export const MovieProvider = ({ children }) => {
     return watchlist.some((movie) => movie.id === movieId);
   };
 
+  const clearWatchlist = () => {
+    setWatchlist([]);
+  };
+
   const value = {
     watchlist,
     addToWatchlist,
     removeFromWatchlist,
     isInWatchlist,
+    clearWatchlist,
   };
 
   return (

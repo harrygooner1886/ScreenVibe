@@ -26,9 +26,7 @@
 .logo-text {
   font-weight: 700;
   font-size: 2rem;
-  background: linear-gradient(90deg, #e50914, #ff9900, #f5c518);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #e50914;
   text-shadow: 0 0 12px rgba(229, 9, 20, 0.9);
   letter-spacing: 1px;
   transition: transform 0.3s ease;
