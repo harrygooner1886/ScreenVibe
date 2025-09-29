@@ -20,10 +20,7 @@ You can search movies, build a personal watchlist, and mark them as watched — 
 ⚡ Built with React + Vite for blazing fast dev and build.
 
 # 🖼️ Screenshots
-<img width="937" height="929" alt="image" src="https://github.com/user-attachments/assets/1dd52de1-102a-42a2-b69b-9f3fcfd8066b" />
-<img width="938" height="928" alt="image" src="https://github.com/user-attachments/assets/a58566ee-eb7b-4238-96e6-dc5112893026" />
-<img width="939" height="932" alt="image" src="https://github.com/user-attachments/assets/52d24a1c-6991-4da7-9923-3ee532eca10d" />
-<img width="942" height="930" alt="image" src="https://github.com/user-attachments/assets/b3855afb-32c3-4471-8c44-75ed9060b074" />
+
 	
 # 🚀 Getting Started
 1. Clone the repo
