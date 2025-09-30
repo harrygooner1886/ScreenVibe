@@ -31,7 +31,8 @@ Find the perfect movie to match your mood.
 
 ---
 
-## 🌍 Deployment
+## 🔗 Live Demo
+👉 [ScreenVibe on Netlify](https://screen-vibe.netlify.app)
 
 ---
 
