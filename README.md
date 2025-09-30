@@ -34,9 +34,12 @@ Version Control: Git & GitHub
 
 # 🚀 Getting Started
 
+Clone the repo
 git clone https://github.com/harrygooner1886/ScreenVibe.git
 cd ScreenVibe
 npm install
+echo "REACT_APP_TMDB_API_KEY=your_api_key_here" > .env
+npm start
 
 4. Run locally
 npm start
