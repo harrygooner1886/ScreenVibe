@@ -36,25 +36,24 @@ Find the perfect movie to match your mood.
 Follow these steps to run the project locally:
 
 1. **Clone the repo**
-   ```bash
-   git clone https://github.com/harrygooner1886/ScreenVibe.git
-   cd ScreenVibe
-Install dependencies
+```bash
+git clone https://github.com/harrygooner1886/ScreenVibe.git
+cd ScreenVibe
+```
 
-bash
-Copy code
+2. **Install dependencies**
+```bash
 npm install
-Add your TMDB API key
+```
 
-Create a .env file in the project root.
-
-Add this line (replace with your own API key):
-
-bash
-Copy code
+3. **Add your TMDB API key**
+- Create a `.env` file in the project root.  
+- Add this line (replace with your own API key):  
+```bash
 REACT_APP_TMDB_API_KEY=your_api_key_here
-Run the app locally
+```
 
-bash
-Copy code
+4. **Run the app locally**
+```bash
 npm start
+```
