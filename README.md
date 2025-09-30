@@ -1,6 +1,7 @@
 # 🍿 ScreenVibe
 
-Find the perfect movie to match your mood. **ScreenVibe** is a React app that helps you pick what to watch by combining a movie quiz, search, and streaming availability.
+Find the perfect movie to match your mood. 
+**ScreenVibe** is a React app that helps you pick what to watch by combining a movie quiz, search, and streaming availability.
 
 ---
 
@@ -17,14 +18,13 @@ Find the perfect movie to match your mood. **ScreenVibe** is a React app that he
 
 ## 📸 Screenshots
 
-*(Add screenshots of your app here – e.g. quiz screen, results screen, search bar on desktop and mobile.)*
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Frontend:** React (with Hooks & Context)  
-- **Styling:** CSS (responsive layouts, fixed footer search bar, custom theme)  
+- **Frontend:** React 
+- **Styling:** CSS
 - **Routing:** React Router  
 - **API:** TMDB API (movies + providers)  
 - **Version Control:** Git & GitHub  
