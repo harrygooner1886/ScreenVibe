@@ -79,3 +79,16 @@ export const getMoviesByPreferences = async ({
     throw err;
   }
 };
+
+export const getMovieProviders = async (movieId) => {
+  const url = `${BASE_URL}/movie/${movieId}/watch/providers?api_key=${API_KEY}`;
+
+  try {
+    const res = await fetch(url);
+    if (!res.ok) throw new Error("Failed to fetch movie providers");
+    return res.json();
+  } catch (err) {
+    console.error("Error in getMovieProviders:", err);
+    throw err;
+  }
+};

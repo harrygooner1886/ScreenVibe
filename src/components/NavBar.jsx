@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import "../css/Navbar.css";
 
 function NavBar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <nav className="navbar">
       <div className="navbar-brand">
@@ -10,9 +13,18 @@ function NavBar() {
           <span className="logo-text">ScreenVibe</span>
         </Link>
       </div>
-      <div className="navbar-links">
-        <Link to="/" className="nav-link">Home</Link>
-        <Link to="/watchlist" className="nav-link">My Watchlist</Link>
+
+      <button
+        className="hamburger"
+        onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Toggle menu"
+      >
+        ☰
+      </button>
+
+      <div className={`navbar-links ${menuOpen ? "open" : ""}`}>
+        <Link to="/" className="nav-link" onClick={() => setMenuOpen(false)}>Home</Link>
+        <Link to="/watchlist" className="nav-link" onClick={() => setMenuOpen(false)}>My Watchlist</Link>
       </div>
     </nav>
   );

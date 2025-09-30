@@ -125,6 +125,31 @@
   transform: scale(1.2);
 }
 
+.watchlist-btn-mobile {
+  display: none;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #e50914;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+  text-align: center;
+}
+
+.watchlist-btn-mobile:hover {
+  background-color: #ff6500;
+}
+
+.watchlist-btn-mobile.active {
+  background-color: #444;
+  color: #fff;
+}
+
 .toggle-description {
   margin-top: 0.5rem;
   background: none;
@@ -151,6 +176,32 @@
   animation: fadeIn 0.3s ease-in-out;
 }
 
+.providers {
+  margin-top: 0.75rem;
+}
+
+.provider-logos {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.25rem;
+}
+
+.provider-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: #fff;
+  object-fit: contain;
+  padding: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.provider-logo:hover {
+  transform: scale(1.1);
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -163,6 +214,7 @@
   }
 }
 
+/* Tablet view */
 @media (max-width: 768px) {
   .movie-card {
     font-size: 0.9rem;
@@ -172,9 +224,70 @@
     padding: 0.75rem;
   }
 
+  .movie-info h3 {
+    font-size: 0.9rem;
+  }
+
   .favorite-btn {
     width: 32px;
     height: 32px;
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .movie-overlay {
+    display: none;
+  }
+
+  .watchlist-btn-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-info {
+    padding: 0.5rem;
+  }
+
+  .movie-info h3 {
+    font-size: 0.85rem;
+  }
+
+  .movie-info p,
+  .user-rating,
+  .toggle-description {
+    font-size: 0.8rem;
+  }
+
+  .favorite-btn {
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 28px;
+    height: 28px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .movie-card {
+    font-size: 0.85rem;
+  }
+
+  .movie-info {
+    padding: 0.5rem;
+  }
+
+  .movie-info h3 {
+    font-size: 0.95rem;
+  }
+
+  .watchlist-btn-mobile {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+  }
+
+  .toggle-description {
+    font-size: 0.8rem;
   }
 }

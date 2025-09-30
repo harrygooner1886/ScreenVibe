@@ -61,6 +61,11 @@
   background: rgba(229, 9, 20, 0.85);
   font-size: 1rem;
   padding: 0.5rem 1rem;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 .clear-watchlist-btn:hover {
@@ -91,6 +96,71 @@ body::before {
   }
 }
 
-.movies-grid > * {
+.movies-grid>* {
   animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* Tablet (up to 768px) */
+@media (max-width: 768px) {
+  .watchlist {
+    padding: 4rem 1rem 1.5rem;
+  }
+
+  .watchlist-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .clear-watchlist-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.9rem;
+  }
+
+  .movies-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+}
+
+/* Small phones (up to 480px) */
+@media (max-width: 480px) {
+  .watchlist {
+    padding: 3.5rem 0.5rem 1rem;
+  }
+
+  .watchlist-header h2 {
+    font-size: 2rem;
+  }
+
+  .clear-watchlist-btn {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .movies-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .watchlist-empty {
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+  }
+
+  .watchlist-empty h2 {
+    font-size: 1.5rem;
+  }
+
+  .watchlist-empty p {
+    font-size: 1rem;
+  }
+
+  .watchlist-header h2 {
+    font-size: 2rem;
+  }
 }

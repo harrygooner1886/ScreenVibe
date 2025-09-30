@@ -102,7 +102,10 @@ function Home() {
           </div>
         )}
 
-        <form onSubmit={handleSearch} className="search-form">
+        <form
+          onSubmit={handleSearch}
+          className={`search-form ${!quizComplete ? "floating" : ""}`}
+        >
           <input
             type="text"
             placeholder="Search for movies..."
