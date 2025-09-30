@@ -18,11 +18,6 @@ Find the perfect movie to match your mood.
 
 ## 📸 Screenshots
 
-<img width="766" height="1670" alt="image" src="https://github.com/user-attachments/assets/eb472c6b-752e-4c68-8a41-379aceae7233" />
-<img width="385" height="837" alt="image" src="https://github.com/user-attachments/assets/c0096422-1aeb-4170-ae2d-0d1b45197c49" />
-<img width="385" height="838" alt="image" src="https://github.com/user-attachments/assets/85d4e195-c5c0-4ef3-b5db-9e5f1e675384" />
-
-
 ---
 
 ## 🛠 Tech Stack
