@@ -18,17 +18,15 @@ Find the perfect movie to match your mood.
 
 ## 📸 Screenshots
 
-### Home Page
-![Home Page](./screenshots/Home_Page.png)
+<p align="center">
+  <img src="screenshots/Home_Page.png" alt="Home Page" width="45%"/>
+  <img src="screenshots/Quiz.png" alt="Quiz" width="45%"/>
+</p>
 
-### Quiz Example
-![Quiz](./screenshots/Quiz.png)
-
-### Movie Details
-![Details](./screenshots/Details.png)
-
-### Movie Watchlist
-![Details](./screenshots/Watchlist.png)
+<p align="center">
+  <img src="screenshots/Details.png" alt="Details" width="45%"/>
+  <img src="screenshots/Watchlist.png" alt="Watchlist" width="45%"/>
+</p>
 
 ---
 
