@@ -1,55 +1,56 @@
-# 🎬 ScreenVibe
+# 🍿 ScreenVibe
 
-Discover what to watch, save it for later, and vibe with your screen time.
-
-ScreenVibe is a React app that helps you decide what to watch when you sit down for a movie night.
-You can search movies, build a personal watchlist, and mark them as watched — all with a sleek, Netflix-style interface.
+Find the perfect movie to match your mood.
+ScreenVibe is a React app that helps you pick what to watch by combining a movie quiz, search, and streaming availability.
 
 # ✨ Features
 
-🔍 Search movies using The Movie Database (TMDb) API.
+🎭 Mood-based quiz – answer a few fun questions (mood, decade, runtime, language, platform) to get personalized movie picks.
 
-🍿 Personal Watchlist — add, remove, and manage your movies.
+🔍 Search – quickly find any movie by title.
 
-✔️ Mark as Watched (coming soon).
+🎥 Movie cards – clean layout with posters, descriptions, and details.
 
-🎨 Stylish UI with gradient branding, animated nav links, and custom favicon.
+🌍 Streaming info – shows where movies are available to watch (e.g. Netflix, etc).
 
-💾 LocalStorage persistence — your watchlist is saved between sessions.
+📱 Responsive design – works smoothly on desktop and mobile, including small screens (iPhone SE tested).
 
-⚡ Built with React + Vite for blazing fast dev and build.
+🎨 Theatre-style UI – popcorn, dark ambience, and cinematic vibes.
 
 # 🖼️ Screenshots
 
-	
+# 🛠️ Tech Stack
+
+Frontend: React (with Hooks & Context)
+
+Styling: CSS (responsive layouts, fixed footer search bar, custom theme)
+
+Routing: React Router
+
+API: TMDB API
+ (movies + providers)
+
+Version Control: Git & GitHub
+
 # 🚀 Getting Started
 1. Clone the repo
-git clone https://github.com/harrygooner1886/movie-app.git
-cd movie-app
+git clone https://github.com/harrygooner1886/ScreenVibe.git
+cd ScreenVibe
 
 2. Install dependencies
 npm install
 
-3. Start the dev server
-npm run dev
+3. Add your TMDB API key
 
+Create a .env file in the project root:
 
-Open http://localhost:5173
- in your browser.
+REACT_APP_TMDB_API_KEY=your_api_key_here
 
-# 🛠️ Tech Stack
+4. Run locally
+npm start
 
-React
- – UI framework
+# 🌍 Deployment
 
-Vite
- – build tool
+# 👨‍💻 Author 
 
-TMDb API
- – movie data
-
-React Router
- – routing
-
-Font Awesome
- – icons
+Made with by Me!
