@@ -33,18 +33,10 @@ API: TMDB API
 Version Control: Git & GitHub
 
 # 🚀 Getting Started
-1. Clone the repo
+
 git clone https://github.com/harrygooner1886/ScreenVibe.git
 cd ScreenVibe
-
-2. Install dependencies
 npm install
-
-3. Add your TMDB API key
-
-Create a .env file in the project root:
-
-REACT_APP_TMDB_API_KEY=your_api_key_here
 
 4. Run locally
 npm start
@@ -53,4 +45,4 @@ npm start
 
 # 👨‍💻 Author 
 
-Made with by Me!
+https://github.com/harrygooner1886
