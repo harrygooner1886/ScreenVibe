@@ -1,59 +1,60 @@
 # 🍿 ScreenVibe
 
-Find the perfect movie to match your mood.
-ScreenVibe is a React app that helps you pick what to watch by combining a movie quiz, search, and streaming availability.
+Find the perfect movie to match your mood. **ScreenVibe** is a React app that helps you pick what to watch by combining a movie quiz, search, and streaming availability.
 
-# ✨ Features
+---
 
-🎭 Mood-based quiz – answer a few fun questions (mood, decade, runtime, language, platform) to get personalized movie picks.
+## ✨ Features
 
-🔍 Search – quickly find any movie by title.
+- 🎭 **Mood-based quiz** – answer a few fun questions (mood, decade, runtime, language, platform) to get personalized movie picks.  
+- 🔍 **Search** – quickly find any movie by title.  
+- 🎬 **Movie cards** – clean layout with posters, descriptions, and details.  
+- 📡 **Streaming info** – shows where movies are available to watch (e.g. Netflix, Prime, etc).  
+- 📱 **Responsive design** – works smoothly on desktop and mobile, including small screens (iPhone SE tested).  
+- 🍿 **Theatre-style UI** – popcorn, dark ambience, and cinematic vibes.  
 
-🎥 Movie cards – clean layout with posters, descriptions, and details.
+---
 
-🌍 Streaming info – shows where movies are available to watch (e.g. Netflix, etc).
+## 📸 Screenshots
 
-📱 Responsive design – works smoothly on desktop and mobile, including small screens (iPhone SE tested).
+*(Add screenshots of your app here – e.g. quiz screen, results screen, search bar on desktop and mobile.)*
 
-🎨 Theatre-style UI – popcorn, dark ambience, and cinematic vibes.
+---
 
-# 🖼️ Screenshots
+## 🛠 Tech Stack
 
-# 🛠️ Tech Stack
+- **Frontend:** React (with Hooks & Context)  
+- **Styling:** CSS (responsive layouts, fixed footer search bar, custom theme)  
+- **Routing:** React Router  
+- **API:** TMDB API (movies + providers)  
+- **Version Control:** Git & GitHub  
 
-Frontend: React
-
-Styling: CSS
-
-Routing: React Router
-
-API: TMDB API
- (movies + providers)
-
-Version Control: Git & GitHub
+---
 
 ## 🚀 Getting Started
 
-```bash
-# Clone the repo
-git clone https://github.com/harrygooner1886/ScreenVibe.git
-cd ScreenVibe
+Follow these steps to run the project locally:
 
-# Install dependencies
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/harrygooner1886/ScreenVibe.git
+   cd ScreenVibe
+Install dependencies
+
+bash
+Copy code
 npm install
+Add your TMDB API key
 
-# Create a .env file in the project root and add your TMDB API key
-echo "REACT_APP_TMDB_API_KEY=your_api_key_here" > .env
+Create a .env file in the project root.
 
-# Run the app locally
+Add this line (replace with your own API key):
+
+bash
+Copy code
+REACT_APP_TMDB_API_KEY=your_api_key_here
+Run the app locally
+
+bash
+Copy code
 npm start
-
-
-4. Run locally
-npm start
-
-# 🌍 Deployment
-
-# 👨‍💻 Author 
-
-https://github.com/harrygooner1886
