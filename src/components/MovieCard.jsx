@@ -59,6 +59,13 @@ function MovieCard({ movie }) {
         <p>{movie.release_date?.split("-")[0]}</p>
 
         <button
+          className={`watchlist-btn-mobile ${inWatchlist ? "active" : ""}`}
+          onClick={onWatchlistClick}
+        >
+          {inWatchlist ? "Remove from Watchlist" : "Add to Watchlist"}
+        </button>
+
+        <button
           className="toggle-description"
           onClick={() => setExpanded(!expanded)}
         >
