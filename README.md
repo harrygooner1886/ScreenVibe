@@ -18,6 +18,18 @@ Find the perfect movie to match your mood.
 
 ## 📸 Screenshots
 
+### Home Page
+![Home Page](./screenshots/Home_Page.png)
+
+### Quiz Example
+![Quiz](./screenshots/Quiz.png)
+
+### Movie Details
+![Details](./screenshots/Details.png)
+
+### Movie Watchlist
+![Details](./screenshots/Watchlist.png)
+
 ---
 
 ## 🛠 Tech Stack
