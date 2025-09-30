@@ -31,6 +31,10 @@ Find the perfect movie to match your mood.
 
 ---
 
+## 🌍 Deployment
+
+---
+
 ## 🚀 Getting Started
 
 Follow these steps to run the project locally:
@@ -57,3 +61,8 @@ REACT_APP_TMDB_API_KEY=your_api_key_here
 ```bash
 npm start
 ```
+
+---
+
+## 👤 Author  
+[Harry](https://github.com/harrygooner1886)
